@@ -38,7 +38,7 @@ def main():
         print("Invalid args!")
         sys.exit(1)
 
-    for i in range(1, int(120)+1):
+    for i in range(1, int(15)+1):
         BOT = SlidoBot(driver= DRIVER)
         BOT.vote()
         BOT.closeBrowser()
