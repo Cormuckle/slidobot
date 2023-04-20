@@ -41,3 +41,13 @@ From there the steps are as follows:
 11. run "pip install -r requirements.txt"
 12. finally run "python3 slidobot.py -d "Output/from/pwd/in/quotes/with/chromedriver/added/to/end"" 
 13. sit back and enjoy
+
+--- 
+
+## editing functionality ##
+
+on line 17 you can edit the option you want to vote on by changing the 1 in "label:nth-child(1)" to whichever option you want to select.
+
+you can also change the number of votes you cast on line 41. change "int(15)" to "int(whatever you want)"
+
+Finally. to use this for a different poll change the URL on line 15 to the one you want to use
