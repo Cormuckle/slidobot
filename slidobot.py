@@ -1,4 +1,5 @@
 from selenium import webdriver
+from selenium.webdriver.common.by import By
 import time
 import sys
 import getopt
@@ -14,10 +15,10 @@ class SlidoBot:
     def vote(self):
         self.driver.get("https://app.sli.do/event/bsTUZCsBZLNMuByJMnbjhd/live/polls")
         time.sleep(1.5)
-        click_elem = self.driver.find_element_by_css_selector("#live-tabpanel-polls > div > div > div > form > div:nth-child(1) > div > div.poll-question__body-container > div > div.poll-question__body > div > label:nth-child(1)")
+        click_elem = self.driver.find_element(By.CSS_SELECTOR,"#live-tabpanel-polls > div > div > div > form > div:nth-child(1) > div > div.poll-question__body-container > div > div.poll-question__body > div > label:nth-child(1)")
         click_elem.click()
         time.sleep(.25)
-        submit = self.driver.find_element_by_css_selector("#poll-submit-button")
+        submit = self.driver.find_element(By.CSS_SELECTOR, "#poll-submit-button")
         submit.click()
         time.sleep(.75)
 
