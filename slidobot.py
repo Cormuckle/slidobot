@@ -30,7 +30,7 @@ def main():
 
 
     for i in range(1, int(500)+1):
-        BOT = SlidoBot( who= EVERYONE[i%4])
+        BOT = SlidoBot()
         BOT.vote()
         BOT.closeBrowser()
         print("Votes: " + str(i))

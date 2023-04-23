@@ -6,41 +6,36 @@ This bot is designed to vote for you in sli.do polls. It is currently set to vot
 
 
 ## Using executable ##
+**This will not work on Windows**
 
-First you can use the executable in the dist folder. I have no idea what systems it works on or if your computer will be happy about you running it. It does require less setup though.
-
+First you can use the executable in the dist folder. 
 Steps are as follows.
 
-1. Download [chromedriver](https://chromedriver.chromium.org/)
-2. download the slidobot executable located in the dist folder
-3. open terminal
-4. run "CD Downloads" followed by "unzip "name of the chromedriver.zip you downloaded"" 
-5. The unzipped version of the file should have the same name without the .zip so run "CD "Name of that file"" followed by PWD. Copy this output to your clipboard or wherever you can get at it easily
-6. The executable should be in the Downloads folder of your laptop so run "CD ~/Downloads" 
-7. finally run "./slidobot -d "Output/from/pwd/in/quotes/with/chromedriver/added/to/end""
-8. enjoy
+1. download the slidobot executable located in the dist folder
+2. open terminal 
+3. if on mac run "cd Downloads"
+3. run "./slidobot"
+4. enjoy
 
 ---
 
 ## Using Python3 ##
 
-to use the python code you will need [Brew](https://brew.sh/) installed.
+to use the python code you will need [Brew](https://brew.sh/) installed if you are on mac.
 
 From there the steps are as follows:
 
-1. open your terminal.
-2. run "brew install python3"
-3. the previous step should also install pip. if it doesn't then you will need to google how to install it.
-4. Download [chromedriver](https://chromedriver.chromium.org/)
-5. Download slidobot.py and requirements.txt from this repo
-6. if you download these files directly they should be in the Downloads folder. if not you may have to figure out where they are. if you cloned this repo or forked it then you should know where they are. Locate them.
-7. run "CD ~"  to get to your home directory
-8. if you are in your home directory (should be a ~) then run "CD Downloads" followed by "unzip "name of the chromedriver.zip you downloaded"" 
-9. The unzipped version of the file should have the same name without the .zip so run "CD "Name of that file"" followed by PWD. Copy this output to your clipboard or wherever you can get at it easily
-10. Navigate back to the space where you stored the slidobot.py and requirements.txt (Use cd ~ to get back to home directory or cd .. to move back by one directory)
-11. run "pip install -r requirements.txt"
-12. finally run "python3 slidobot.py -d "Output/from/pwd/in/quotes/with/chromedriver/added/to/end"" 
-13. sit back and enjoy
+1. Download slidobot.py and requirements.txt from this repo. To do this click the green CODE button and select "download zip"
+2. open your terminal.
+3. run "brew install python3"
+4. the previous step should also install pip. if it doesn't then you will need to google how to install it.
+5. run "CD ~"  to get to your home directory
+6. run "CD Downloads"
+7. run "unzip slidobot-master.zip"
+8. run "cd slidobot-master"
+9. run "pip install -r requirements.txt"
+10. run "python3 slidobot.py"
+11. enjoy your free votes
 
 --- 
 
