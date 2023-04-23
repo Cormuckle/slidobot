@@ -1,3 +1,4 @@
 selenium
 six
 urllib3
+webdriver-manager
